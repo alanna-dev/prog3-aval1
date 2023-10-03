@@ -1,0 +1,84 @@
+.main__section--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.9)), 
+    url(img/pexels-matthias-groeneveld-4200745.jpg);
+    height: 90vh;
+}
+
+.div--login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form--login {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+.form--login h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.form--login p {
+    display: inline-block;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.form--login input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #dab201;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.form--login label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form--login a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: white;
+    transition: all linear 160ms;
+}
+
+.button--login {
+    background-color: #dab201;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    margin: 0;
+}
+
+.button--login:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 1177px) {
+    .form--login input {
+        width: 30em;
+    }
+    .div__button--login {
+        display: flex;
+        justify-content: center;
+    }
+}

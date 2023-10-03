@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+
+.nav {
+    display: flex;
+    background-color: #dab201;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__div {
+    display: flex;
+}
+
+.nav__img {
+    width: 48px;
+    margin-left: 1em;
+}
+
+.nav__icon {
+    width: 24px;
+    padding-right: 8px;
+}
+
+li > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+li > a:hover {
+    font-weight: lighter;
+}
+
+nav li {
+    display: flex;
+    list-style: none;
+    margin-right: 1em;
+}
+
+nav ul {
+    display: block;
+}
+
+.nav-lista-container {
+    width: 360px;
+    min-width: 300px;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.9)), 
+    url(img/pexels-matthias-groeneveld-4200745.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+.header__div--container {
+    width: 100%;
+    display: grid;
+}
+
+.header__div--titulo {
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 8% 10% 8% 10%;
+}
+
+.div__p--texto {
+    margin: 30px 0px;
+    font-weight: 200;
+    line-height: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+    background-color: rgb(5, 5, 5);
+    color: aliceblue;
+    padding-bottom: 32px;
+}
+
+.section__h2--lancamento {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.section__div--content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.div--content-music {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.div__img--music {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    transition: all .5s ease 0s;
+}
+
+.button--buy {
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    background-color: #dab201;
+    margin-top: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+footer {
+    background-color: #dab201;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+.footer__a--harmony{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.footer__div--redes {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 0px 10px 0px;
+}
+.footer__img--redes {
+    width: 40px;
+    height: 40px;
+}
+.footer__div--cc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: black;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1177px) {
+    .nav {
+        height: 80px;
+    }
+    .nav__img {
+        width: 80px;
+        padding-top: 1px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    header {
+        display: flex;
+    }
+    .header__div--container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .header__div--titulo {
+        width: 100%;
+        text-align: left;
+        font-size: 25px;
+        margin: 8% 5% 10% 5%;
+    }
+    .header__button {
+        width: 60%;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 3px;
+        transition: all .5s ease 0s;
+        margin: 20% 0%;
+    }
+    .header__button:hover {
+        transform: scale(1.05);
+        transition: all .5s ease 0s;
+    }
+    .div__p--texto {
+        font-size: 24px;
+        margin-right: 2em;
+    }
+}
